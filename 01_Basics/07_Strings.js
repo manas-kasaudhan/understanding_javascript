@@ -5,7 +5,7 @@ const repoCount = 50;
 
 console.log(
   `Hello my name is ${name.toUpperCase()} and my repo count is ${repoCount}`,
-);
+); // String Interpolition
 
 const gameName = new String("Manas");
 
