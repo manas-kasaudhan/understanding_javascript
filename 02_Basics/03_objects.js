@@ -24,7 +24,7 @@ JsUser.email = "Manas@gmail.com"; // for changing something in the object .
 
 // Object.freeze(JsUser) // freezes the object , thus no further changes should apply .
 
-JsUser.name = "Manas"; // Yeh CHnge nai hoga kyuki object freeze ho chuka hai ..
+JsUser.name = "Manas"; // Yeh Change nai hoga kyuki object freeze ho chuka hai ..
 
 console.log(JsUser);
 
