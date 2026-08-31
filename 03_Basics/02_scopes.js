@@ -1,7 +1,7 @@
 {
 } // scope
 
-let a = 300; // global scope --> accepeted by whole program
+let a = 300; // global scope --> accepted by whole program
 
 if (true) {
   // block scope --> scope inside a loop , conditional etc.
@@ -13,49 +13,42 @@ if (true) {
 console.log(a); // output will be 300 because the variable a comes from a global scope .
 // console.log(b);
 
+// ********** NESTED SCOPE ************* //
 
-// ********** NESTED SCOPE ************* // 
+function one() {
+  const username = "Manas";
 
-function one(){
-    const username = "Manas"
+  function two() {
+    const website = "youtube";
+    console.log(username);
+  }
+  // console.log(website);
 
-    function two(){
-        const website = "youtube"
-        console.log(username);
-        
-    }
-    // console.log(website);
-
-    two()
-    
+  two();
 }
-one()
+one();
 
 // method two can take input from method one , but not vice versa .
 
-if(true){
-    const username = "Vardaan"
-    if(username === "Vardaan"){
-        const website = " youtube"
-        console.log(username  +  website);
-        
-    } 
-    //console.log(website);
-    
+if (true) {
+  const username = "Vardaan";
+  if (username === "Vardaan") {
+    const website = " youtube";
+    console.log(username + website);
+  }
+  //console.log(website);
 }
 //console.log(username);
-
 
 //++++++++++++INTERESTING++++++++++++++++
 console.log(addOne(5));
 
-function addOne (num){
-    return num + 1
+function addOne(num) {
+  return num + 1;
 }
-
 
 console.log(addTwo(6)); // it will throw and error , because it has a variable in it thats why it cannot execute it before declaration .
 
-const addTwo = function(num){
-    return num + 2
-}
+const addTwo = function (num) {
+  return num + 2;
+};
