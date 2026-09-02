@@ -50,5 +50,6 @@ function addOne(num) {
 console.log(addTwo(6)); // it will throw and error , because it has a variable in it thats why it cannot execute it before declaration .
 
 const addTwo = function (num) {
+ 
   return num + 2;
 };
